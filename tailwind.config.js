@@ -1,4 +1,4 @@
-/** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: ["./public/index.html", "./src/**/*.{html,js}"],
   theme: {
@@ -17,15 +17,13 @@ module.exports = {
       buttonhover: "hsl(200,99%,71%)",
     },
     fontFamily: {
-      sans: ["Barlow", "sans-serif"],
-      serif: ["Fraunces", "serif"],
+      barlow: ["Barlow", "sans-serif"],
+      fraunces: ["Fraunces", "serif"],
     },
     extend: {
-      letterSpacing: {
-        extrawide: "0.25em",
-      },
-      lineHeight: {
-        button: "0.25em",
+      backgroundImage: {
+        mobile: "url('../images/mobile/image-header.jpg')",
+        desktop: "url('../images/desktop/image-header.jpg')",
       },
     },
   },
