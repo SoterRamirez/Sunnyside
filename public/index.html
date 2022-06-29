@@ -22,6 +22,9 @@
                     sunnyside
                 </h1>
                 <!--Toogle Menu-->
+                <div class="lg:hidden">
+                    <img src="./images/svg/icon-hamburger.svg" alt="mobile-menu-toggle"/>
+                </div>
                 <!--Menu Desktop-->
                 <div class="hidden lg:block">
                     <ul class="flex flex-col lg:flex-row gap-10 text-white items-center font-barlow text-lg">
@@ -30,6 +33,19 @@
                         <a href="#">Projects</a>
                         <a href="#" class="bg-white hover:bg-buttonhover hover:text-white py-3 px-6 rounded-3xl text-darkblue uppercase">Contact</a>
                     </ul>
+                </div>
+                <!--Menu Mobile-->
+                <div class="md:flex md:flex-col">
+                    <div class="md:hidden block menu bg-white">
+                        <ul class="flex flex-col gap-10 py-10 items-center font-barlow text-lg text-greyblue">
+                            <a href="#">About</a>
+                            <a href="#">Services</a>
+                            <a href="#">Projects</a>
+                            <a href="#" class="bg-yellow hover:bg-deyellow py-3 px-6 rounded-3xl text-darkblue uppercase">
+                                Contact
+                            </a>
+                        </ul>
+                    </div>
                 </div>
             </nav>
             <div class="flex items-center gap-24 flex-col">

@@ -589,6 +589,10 @@ video {
   margin-left: 4rem;
 }
 
+.block {
+  display: block;
+}
+
 .flex {
   display: flex;
 }
@@ -650,6 +654,11 @@ video {
   background-color: hsl(0 0% 100% / var(--tw-bg-opacity));
 }
 
+.bg-yellow {
+  --tw-bg-opacity: 1;
+  background-color: hsl(51 100% 49% / var(--tw-bg-opacity));
+}
+
 .bg-mobile {
   background-image: url('../images/mobile/image-header.jpg');
 }
@@ -674,6 +683,11 @@ video {
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .pb-6 {
@@ -741,9 +755,19 @@ video {
   color: hsl(198 62% 26% / var(--tw-text-opacity));
 }
 
+.text-greyblue {
+  --tw-text-opacity: 1;
+  color: hsl(210 4% 67% / var(--tw-text-opacity));
+}
+
 .hover\:bg-buttonhover:hover {
   --tw-bg-opacity: 1;
   background-color: hsl(200 99% 71% / var(--tw-bg-opacity));
+}
+
+.hover\:bg-deyellow:hover {
+  --tw-bg-opacity: 1;
+  background-color: hsl(50 95% 85% / var(--tw-bg-opacity));
 }
 
 .hover\:text-white:hover {
@@ -757,8 +781,20 @@ video {
     margin-right: auto;
   }
 
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+
   .md\:w-\[1440px\] {
     width: 1440px;
+  }
+
+  .md\:flex-col {
+    flex-direction: column;
   }
 
   .md\:text-5xl {
