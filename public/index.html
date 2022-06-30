@@ -13,9 +13,9 @@
 </head>
 
 <body>
-    <container class="md:w-[1440px] md:mx-auto container">
+    <main class="md:w-[1440px] md:mx-auto container">
         <!-- Naranja -->
-        <div class="bg-mobile lg:bg-desktop bg-cover px-6 pt-6 h-[535px] lg:h-[800px] bg-center bg-no-repeat w-full ">
+        <div class="bg-mobile lg:bg-desktop bg-cover px-6 pt-6 h-[535px] lg:h-[800px] bg-center bg-no-repeat w-full">
             <!--Nav-->
             <nav class="flex justify-between">
                 <h1 class="text-white font-extrabold tracking-wide font-barlow text-2xl md:text-4xl">
@@ -56,7 +56,21 @@
                 <img src="./images/svg/icon-arrow-down.svg" alt="">
             </div>
         </div>
-    </container>
+        <!-- Contenido -->
+        <section class="grid md:grid-cols-2 grid-cols-1">
+            <article class="p-10 lg:p-16 lg:text-left flex flex-col justify-center text-center">
+                <h2 class="text-3xl lg:text-4xl font-extrabold font-fraunces text-deblue pb-6">Transform your brand</h2>
+                <p class="lg:text-lg text-verygreyblue font-barlow lg:pb-12 pb-6">
+                    We are a full-service creative agency specializing in helping brands grow fast. Engage your cleints through compelling visuals that do most of the marketing for you.
+                </p>
+                <a href="/" class="self-center lg:self-start uppercase text-xl font-fraunces  border-b-8 border-deyellow  hover:border-yellow w-fit leading-button px-2">Learn More</a>
+            </article>
+            <picture class="image h-full w-auto order-first md:order-none">
+                <img class="hidden md:block" src="./images/desktop/image-transform.jpg" alt="transform" loading="auto">
+                <img class="block md:hidden" src="./images/mobile/image-transform.jpg" alt="transform" loading="auto">
+            </picture>
+        </section>
+    </main>
 </body>
 
 </html>
