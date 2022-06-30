@@ -24,6 +24,8 @@ module.exports = {
       backgroundImage: {
         mobile: "url('../images/mobile/image-header.jpg')",
         desktop: "url('../images/desktop/image-header.jpg')",
+        graphicdesign: "url('../images/desktop/image-graphic-design.jpg')",
+        photography: "url('../images/desktop/image-photography.jpg')",
       },
     },
   },
