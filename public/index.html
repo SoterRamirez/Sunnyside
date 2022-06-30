@@ -12,163 +12,186 @@
     <title>Sunny Side</title>
 </head>
 
-<body>
-    <main class="md:w-[1440px] md:mx-auto container">
-        <!-- Naranja -->
-        <div class="bg-mobile lg:bg-desktop bg-cover px-6 pt-6 h-[535px] lg:h-[800px] bg-center bg-no-repeat w-full">
-            <!--Nav-->
-            <nav class="flex justify-between">
-                <h1 class="text-white font-extrabold tracking-wide font-barlow text-2xl md:text-4xl">
-                    sunnyside
-                </h1>
-                <!--Toogle Menu-->
-                <div class="lg:hidden">
-                    <img src="./images/svg/icon-hamburger.svg" alt="mobile-menu-toggle"/>
-                </div>
-                <!--Menu Desktop-->
-                <div class="hidden lg:block">
-                    <ul class="flex flex-col lg:flex-row gap-10 text-white items-center font-barlow text-lg">
+<body class="md:w-[1440px] md:mx-auto container">
+    <!-- Naranja -->
+    <div class="bg-mobile lg:bg-desktop bg-cover px-6 pt-6 h-[535px] lg:h-[800px] bg-center bg-no-repeat w-full">
+        <!--Nav-->
+        <nav class="flex justify-between">
+            <h1 class="text-white font-extrabold tracking-wide font-barlow text-2xl md:text-4xl">
+                sunnyside
+            </h1>
+            <!--Toogle Menu-->
+            <div class="lg:hidden">
+                <img src="./images/svg/icon-hamburger.svg" alt="mobile-menu-toggle"/>
+            </div>
+            <!--Menu Desktop-->
+            <div class="hidden lg:block">
+                <ul class="flex flex-col lg:flex-row gap-10 text-white items-center font-barlow text-lg">
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Projects</a>
+                    <a href="#" class="bg-white hover:bg-buttonhover hover:text-white py-3 px-6 rounded-3xl text-darkblue uppercase">Contact</a>
+                </ul>
+            </div>
+            <!--Menu Mobile-->
+            <div class="md:flex md:flex-col">
+                <div class="md:hidden block menu bg-white">
+                    <ul class="flex flex-col gap-10 py-10 items-center font-barlow text-lg text-greyblue">
                         <a href="#">About</a>
                         <a href="#">Services</a>
                         <a href="#">Projects</a>
-                        <a href="#" class="bg-white hover:bg-buttonhover hover:text-white py-3 px-6 rounded-3xl text-darkblue uppercase">Contact</a>
+                        <a href="#" class="bg-yellow hover:bg-deyellow py-3 px-6 rounded-3xl text-darkblue uppercase">
+                            Contact
+                        </a>
                     </ul>
                 </div>
-                <!--Menu Mobile-->
-                <div class="md:flex md:flex-col">
-                    <div class="md:hidden block menu bg-white">
-                        <ul class="flex flex-col gap-10 py-10 items-center font-barlow text-lg text-greyblue">
-                            <a href="#">About</a>
-                            <a href="#">Services</a>
-                            <a href="#">Projects</a>
-                            <a href="#" class="bg-yellow hover:bg-deyellow py-3 px-6 rounded-3xl text-darkblue uppercase">
-                                Contact
-                            </a>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <div class="flex items-center gap-24 flex-col">
-                <p
-                    class="md:text-5xl text-4xl text-center pt-24 leading-relaxed font-fraunces uppercase text-white tracking-extrawide font-extrabold">
-                    WE ARE CREATIVES
-                </p>
-                <img src="./images/svg/icon-arrow-down.svg" alt="">
             </div>
+        </nav>
+        <div class="flex items-center gap-24 flex-col">
+            <p
+                class="md:text-5xl text-4xl text-center pt-24 leading-relaxed font-fraunces uppercase text-white tracking-extrawide font-extrabold">
+                WE ARE CREATIVES
+            </p>
+            <img src="./images/svg/icon-arrow-down.svg" alt="">
         </div>
-        <!-- Contenido -->
-        <section class="grid md:grid-cols-2 grid-cols-1">
-            <!--Primer bloque-->
-            <article class="p-10 lg:p-16 lg:text-left flex flex-col justify-center text-center">
-                <h2 class="text-3xl lg:text-4xl font-extrabold font-fraunces text-deblue pb-6">Transform your brand</h2>
-                <p class="lg:text-lg text-verygreyblue font-barlow lg:pb-12 pb-6">
-                    We are a full-service creative agency specializing in helping brands grow fast. Engage your cleints through compelling visuals that do most of the marketing for you.
-                </p>
-                <a href="/" class="self-center lg:self-start uppercase text-xl font-fraunces  border-b-8 border-deyellow  hover:border-yellow w-fit leading-button px-2">Learn More</a>
-            </article>
-            <picture class="image h-full w-auto order-first md:order-none">
-                <img class="hidden md:block" src="./images/desktop/image-transform.jpg" alt="transform" loading="auto">
-                <img class="block md:hidden" src="./images/mobile/image-transform.jpg" alt="transform" loading="auto">
-            </picture>
-            <!--Segundo bloque-->
-            <picture class="image h-full">
-                <img class="hidden md:block" src="./images/desktop/image-stand-out.jpg" alt="stand-out" loading="auto">
-                <img class="block md:hidden md:h-full" src="./images/mobile/image-stand-out.jpg" alt="stand-out" loading="auto">
-            </picture>
-            <article class="p-10 lg:p-16 lg:text-left flex flex-col justify-center text-center">
-                <h2 class="text-3xl lg:text-4xl font-extrabold font-fraunces text-deblue pb-6">
-                    Stand out to the right audience
-                </h2>
-                <p class="lg:text-lg text-verygreyblue font-barlow lg:pb-12 pb-6">
-                    Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we'll build and extend your brand in digital places.
-                </p>
-                <a href="/" class="uppercase text-xl font-serif self-center lg:self-start  border-b-8 border-desoftred  hover:border-softred w-fit leading-button px-2">Lear More</a>
-            </article>
-            <!--Tercer bloque-->
-            <aside class="md:p-16 p-8 pt-[30rem] bg-graphicdesign bg-cover bg-center flex flex-col justify-end">
-                <h2 class="text-center text-decyan text-4xl font-fraunces">
-                    Graphic Design
-                </h2>
-                <p class="text-decyan text-center text-lg font-barlow">
-                    Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients' attention.
-                </p>
-            </aside>
-            <aside class="md:p-16 p-8 md:pt-[30rem] pt-[30rem] bg-photography bg-cover bg-center flex flex-col justify-end">
-                <h2 class="text-center text-decyan text-4xl font-fraunces">
-                    Photography
-                </h2>
-                <p class="text-decyan text-center text-lg font-barlow">
-                    Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
-                </p>
-            </aside>
-        </section>
-        <!--Testimonio-->
-        <section class="lg:p-24 p-12">
-            <h2 class="text-center font-fraunces uppercase tracking-extrawide text-greyblue text-2xl py-12">
-                Client Testimonials
+    </div>
+    <!-- Contenido -->
+    <section class="grid md:grid-cols-2 grid-cols-1">
+        <!--Primer bloque-->
+        <article class="p-10 lg:p-16 lg:text-left flex flex-col justify-center text-center">
+            <h2 class="text-3xl lg:text-4xl font-extrabold font-fraunces text-deblue pb-6">Transform your brand</h2>
+            <p class="lg:text-lg text-verygreyblue font-barlow lg:pb-12 pb-6">
+                We are a full-service creative agency specializing in helping brands grow fast. Engage your cleints through compelling visuals that do most of the marketing for you.
+            </p>
+            <a href="/" class="self-center lg:self-start uppercase text-xl font-fraunces  border-b-8 border-deyellow  hover:border-yellow w-fit leading-button px-2">Learn More</a>
+        </article>
+        <picture class="image h-full w-auto order-first md:order-none">
+            <img class="hidden md:block" src="./images/desktop/image-transform.jpg" alt="transform" loading="auto">
+            <img class="block md:hidden" src="./images/mobile/image-transform.jpg" alt="transform" loading="auto">
+        </picture>
+        <!--Segundo bloque-->
+        <picture class="image h-full">
+            <img class="hidden md:block" src="./images/desktop/image-stand-out.jpg" alt="stand-out" loading="auto">
+            <img class="block md:hidden md:h-full" src="./images/mobile/image-stand-out.jpg" alt="stand-out" loading="auto">
+        </picture>
+        <article class="p-10 lg:p-16 lg:text-left flex flex-col justify-center text-center">
+            <h2 class="text-3xl lg:text-4xl font-extrabold font-fraunces text-deblue pb-6">
+                Stand out to the right audience
             </h2>
-            <article class="flex flex-col lg:flex-row md:gap-12 gap-4">
-                <!--Emily-->
-                <div class="flex flex-col items-center">
-                    <img class="rounded-full scale-50 md:mb-6" src="./images/image-emily.jpg" alt="Emily" loading="auto">
-                    <p class="text-lg text-center text-verygreyblue md:mb-16 mb-8">
-                        We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
-                    </p>
-                    <p class="text-xl font-fraunces text-deblue">
-                        Emily R.
-                    </p>
-                    <p class="text-md font-barlow text-greyblue">
-                        Marketing Director
-                    </p>
-                </div>
-                <!--Thomas-->
-                <div class="flex flex-col items-center">
-                    <img class="rounded-full scale-50 md:mb-6" src="./images/image-thomas.jpg" alt="Thomas" loading="auto">
-                    <p class="text-lg text-center text-verygreyblue md:mb-16 mb-8">
-                        We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
-                    </p>
-                    <p class="text-xl font-fraunces text-deblue">
-                        Thomas S.
-                    </p>
-                    <p class="text-md font-barlow text-greyblue">
-                        Chief Operating Officer
-                    </p>
-                </div>
-                <!--Jennie-->
-                <div class="flex flex-col items-center">
-                    <img class="rounded-full scale-50 md:mb-6" src="./images/image-jennie.jpg" alt="Jennie" loading="auto">
-                    <p class="text-lg text-center text-verygreyblue md:mb-16 mb-8">
-                        We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
-                    </p>
-                    <p class="text-xl font-fraunces text-deblue">
-                        Jennie F.
-                    </p>
-                    <p class="text-md font-barlow text-greyblue">
-                        Business Owner
-                    </p>
-                </div>
-            </article>
-        </section>
-        <!--Galería-->
-        <section class="grid grid-cols-2 md:grid-cols-4">
-            <picture>
-                <img class="hidden md:block" src="./images/desktop/image-gallery-milkbottles.jpg" alt=" gallery milkbottles">
-                <img class="block md:hidden" src="./images/mobile/image-gallery-milkbottles.jpg" alt="gallery milkbottles">
-            </picture>
-            <picture>
-                <img class="hidden md:block" src="./images/desktop/image-gallery-orange.jpg" alt="gallery orange">
-                <img class="block md:hidden" src="./images/mobile/image-gallery-orange.jpg" alt="gallery orange">
-            </picture>
-            <picture>
-                <img class="hidden md:block" src="./images/desktop/image-gallery-cone.jpg" alt="gallery cone">
-                <img class="block md:hidden" src="./images/mobile/image-gallery-cone.jpg" alt="gallery cone">
-            </picture>
-            <picture>
-                <img class="hidden md:block" src="./images/desktop/image-gallery-sugarcubes.jpg" alt="gallery sugar cubes">
-                <img class="block md:hidden" src="./images/mobile/image-gallery-sugar-cubes.jpg" alt="gallery sugar cubes">
-            </picture>
-        </section>
-    </main>
+            <p class="lg:text-lg text-verygreyblue font-barlow lg:pb-12 pb-6">
+                Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we'll build and extend your brand in digital places.
+            </p>
+            <a href="/" class="uppercase text-xl font-serif self-center lg:self-start  border-b-8 border-desoftred  hover:border-softred w-fit leading-button px-2">Lear More</a>
+        </article>
+        <!--Tercer bloque-->
+        <aside class="md:p-16 p-8 pt-[30rem] bg-graphicdesign bg-cover bg-center flex flex-col justify-end">
+            <h2 class="text-center text-decyan text-4xl font-fraunces">
+                Graphic Design
+            </h2>
+            <p class="text-decyan text-center text-lg font-barlow">
+                Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients' attention.
+            </p>
+        </aside>
+        <aside class="md:p-16 p-8 md:pt-[30rem] pt-[30rem] bg-photography bg-cover bg-center flex flex-col justify-end">
+            <h2 class="text-center text-decyan text-4xl font-fraunces">
+                Photography
+            </h2>
+            <p class="text-decyan text-center text-lg font-barlow">
+                Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+            </p>
+        </aside>
+    </section>
+    <!--Testimonio-->
+    <section class="lg:p-24 p-12">
+        <h2 class="text-center font-fraunces uppercase tracking-extrawide text-greyblue text-2xl py-12">
+            Client Testimonials
+        </h2>
+        <article class="flex flex-col lg:flex-row md:gap-12 gap-4">
+            <!--Emily-->
+            <div class="flex flex-col items-center">
+                <img class="rounded-full scale-50 md:mb-6" src="./images/image-emily.jpg" alt="Emily" loading="auto">
+                <p class="text-lg text-center text-verygreyblue md:mb-16 mb-8">
+                    We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
+                </p>
+                <p class="text-xl font-fraunces text-deblue">
+                    Emily R.
+                </p>
+                <p class="text-md font-barlow text-greyblue">
+                    Marketing Director
+                </p>
+            </div>
+            <!--Thomas-->
+            <div class="flex flex-col items-center">
+                <img class="rounded-full scale-50 md:mb-6" src="./images/image-thomas.jpg" alt="Thomas" loading="auto">
+                <p class="text-lg text-center text-verygreyblue md:mb-16 mb-8">
+                    We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
+                </p>
+                <p class="text-xl font-fraunces text-deblue">
+                    Thomas S.
+                </p>
+                <p class="text-md font-barlow text-greyblue">
+                    Chief Operating Officer
+                </p>
+            </div>
+            <!--Jennie-->
+            <div class="flex flex-col items-center">
+                <img class="rounded-full scale-50 md:mb-6" src="./images/image-jennie.jpg" alt="Jennie" loading="auto">
+                <p class="text-lg text-center text-verygreyblue md:mb-16 mb-8">
+                    We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
+                </p>
+                <p class="text-xl font-fraunces text-deblue">
+                    Jennie F.
+                </p>
+                <p class="text-md font-barlow text-greyblue">
+                    Business Owner
+                </p>
+            </div>
+        </article>
+    </section>
+    <!--Galería-->
+    <section class="grid grid-cols-2 md:grid-cols-4">
+        <picture>
+            <img class="hidden md:block" src="./images/desktop/image-gallery-milkbottles.jpg" alt=" gallery milkbottles">
+            <img class="block md:hidden" src="./images/mobile/image-gallery-milkbottles.jpg" alt="gallery milkbottles">
+        </picture>
+        <picture>
+            <img class="hidden md:block" src="./images/desktop/image-gallery-orange.jpg" alt="gallery orange">
+            <img class="block md:hidden" src="./images/mobile/image-gallery-orange.jpg" alt="gallery orange">
+        </picture>
+        <picture>
+            <img class="hidden md:block" src="./images/desktop/image-gallery-cone.jpg" alt="gallery cone">
+            <img class="block md:hidden" src="./images/mobile/image-gallery-cone.jpg" alt="gallery cone">
+        </picture>
+        <picture>
+            <img class="hidden md:block" src="./images/desktop/image-gallery-sugarcubes.jpg" alt="gallery sugar cubes">
+            <img class="block md:hidden" src="./images/mobile/image-gallery-sugar-cubes.jpg" alt="gallery sugar cubes">
+        </picture>
+    </section>
+    <!--Footer-->
+    <footer class="bg-footer py-12">
+        <h2 class="text-center text-3xl font-extrabold text-modcyan pb-8">sunnyside</h2>
+        <!--Service footer-->
+        <ul class="text-lg flex justify-center gap-12 text-modcyan pb-20">
+            <a class="hover:text-white" href="">About</a>
+            <a class="hover:text-white" href="">Service</a>
+            <a class="hover:text-white" href="">Projects</a>
+        </ul>
+        <!--Social Media-->
+        <ul class="flex justify-center gap-6">
+            <li>
+                <img class="hover:contrast-0 hover:brightness-200" src="./images/svg/icon-facebook.svg" alt="Facebook">
+            </li>
+            <li>
+                <img class="hover:contrast-0 hover:brightness-200" src="./images/svg/icon-instagram.svg" alt="Instagram">
+            </li>
+            <li>
+                <img class="hover:contrast-0 hover:brightness-200" src="./images/svg/icon-twitter.svg" alt="Twitter">
+            </li>
+            <li>
+                <img class="hover:contrast-0 hover:brightness-200" src="./images/svg/icon-pinterest.svg" alt="Pinterest">
+            </li>
+        </ul>
+    </footer>
 </body>
 
 </html>
